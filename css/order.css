@@ -1,0 +1,272 @@
+
+
+* {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #acff53a5;
+  background-image: url("../images/360_F_663164516_iROkqpM1RCrA765j6hLMp1v6Lf2xPnU1.jpg");
+  background-size: cover;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #202020;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.fresh {
+  color: #000000;
+}
+
+.mart {
+  color: #40aa54;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation ul li a:hover{
+  background-color: #74c541;
+  color: #000000;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 20px;
+}
+
+
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.order img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #ecff8d;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 5px solid #e4ff4a;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #59ff34;
+}
+
+.footer-menu {
+  margin: 20px 0;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+  background-color: #74c541;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navigation ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+  }
+
+  .navigation ul li {
+      margin: 10px 0;
+  }
+
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  form {
+      width: 100%;
+  }
+
+  select, input, textarea, button {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo span {
+      font-size: 1.2rem;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  form {
+      padding: 10px;
+  }
+}
+
+
+.order {
+  margin: 20px 0;
+}
+
+
+
+.search-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Adjust padding for larger button */
+  margin-left: 15px; /* Increase the margin-left value to move the button more to the right */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}

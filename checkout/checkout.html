@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Mart</title>
+    <link rel="stylesheet" href="../checkout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="../images/fresh mart removed background.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <a href="#" class="logo">
+            <span><span class="fresh">FRESH</span> <span class="mart">MART</span></span>
+        </a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html" class="active"> Home </a></li>
+                <li><a href="../about us/about us.html"> About us </a></li>
+                <li><a href="../product/product.html"> Product page </a></li>
+                <li><a href="../order/order.html"> Order page </a></li>
+                <li><a href="../loyalty/loyalty.html"> Loyalty registration </a></li>
+                
+                
+
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <form action="#" class="search-form">
+                <input type="text" class="search-input" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <form id="checkoutForm">
+        <h2>Order Summary</h2>
+        <table id="summaryTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items will be added here dynamically -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Price:</td>
+                    <td id="summaryTotalPrice">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2><u>Personal Details</u></h2>
+        <label>Name: <input type="text" id="name" required></label><br>
+        <label>Email: <input type="email" id="email" required></label><br>
+
+        <h2><u>Delivery Details</u></h2>
+        <label>Address: <input type="text" id="address" required></label><br>
+        <label>City: <input type="text" id="city" required></label><br>
+        <label>Zip Code: <input type="text" id="zip" required></label><br>
+
+        <h2><u>Payment Information</u></h2>
+        <div class="payment-methods">
+            <label>
+                <input type="radio" name="payment" value="credit" checked> Credit Card
+                <img src="../images/visa-payment-card1873-removebg-preview.png" alt="Credit Card" class="payment-image">
+            </label><br>
+            <label>
+                <input type="radio" name="payment" value="debit"> Debit Card
+                <img src="../images/mastercard.png" alt="Debit Card" class="payment-image">
+            </label><br>
+            <label>Card Number: <input type="text" id="card" required></label><br>
+            <label>Expiry Date: <input type="text" id="expiry" required></label><br>
+            <label>CVV: <input type="text" id="cvv" required></label><br>
+        </div>
+
+        <button type="button" id="payButton">Pay</button>
+        
+    </form>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="social-links">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="../index.html" class="active"> Home </a></li>
+                <li><a href="../about us/about us.html"> About us </a></li>
+                <li><a href="../product/product.html"> Product page </a></li>
+                <li><a href="../order/order.html"> Order page </a></li>
+                <li><a href="../loyalty/loyalty.html"> Loyalty registration </a></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 Fresh Mart. All rights reserved | Created by: SHAN.EXEEEEEEEE</p>
+        </div>
+    </div>
+    <script src="../javascript/checkout.js"></script>
+</footer>
+
+</body>
+</html>

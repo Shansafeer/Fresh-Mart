@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/CHECKOUT\ BACKGROUND.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-size: 1500px 1080px;
+    background-position: fixed;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#summaryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#summaryTable th, #summaryTable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#summaryTable th {
+    background-color: #f4f4f4;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #202020;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    background-color: #74c541;
+    color: #000000;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #ecff8d;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 5px solid #e4ff4a;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #59ff34;
+}
+
+.footer-menu {
+    margin: 20px 0;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+    background-color: #74c541;
+    color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navigation ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    select, input, textarea, button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo span {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 10px;
+    }
+}
+
+.fresh-mart {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.fresh {
+    color: black;
+}
+
+.mart {
+    color: green;
+}
+
+/* Payment method images */
+.payment-methods {
+    margin: 20px 0;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-methods input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-image {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .payment-image {
+        width: 40px; /* Adjust the size for smaller screens */
+    }
+}
+
+
+

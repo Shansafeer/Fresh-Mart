@@ -262,7 +262,7 @@ footer {
   }
 
   select, input, textarea, button {
-      width: -100%;
+      width: 100%;
   }
 }
 

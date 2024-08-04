@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (name && email && address && city && zip && card && expiry && cvv) {
             const deliveryDate = new Date();
             deliveryDate.setDate(deliveryDate.getDate() + 7);
-            alert(`Thank you for your purchasing in A-MART! Your order will be delivered by ${deliveryDate.toDateString()}.`);
+            alert(`Thank you for your purchasing in FreshMart! Your order will be delivered by ${deliveryDate.toDateString()}.`);
         } else {
             alert('Please fill in all the required fields.');
         }

@@ -3,8 +3,8 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #a9dc7c;
   background-size: 1500px 1080px;
-  background-attachment: fixed;
-  background-image: url("./images/background image 1.jpg");
+  background-position: fixed;
+  background-image: url("../images/background\ image\ 1.jpg");
   margin: 0;
   padding: 0;
   color: #6e6e6e;
@@ -131,7 +131,8 @@ button:hover {
   padding: 2em;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  
+  
 }
 
 table {
@@ -165,7 +166,7 @@ tfoot {
 
 .product {
   background: white;
-  padding: 10px;
+  padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -235,58 +236,35 @@ footer {
   color: #000000;
 }
 
-/* Responsive styling for tablets */
 @media screen and (max-width: 768px) {
   .header-container {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   .navigation ul {
-    flex-direction: column;
-    width: 100%;
-    text-align: left;
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
   }
 
   .navigation ul li {
-    margin: 10px 0;
+      margin: 10px 0;
   }
 
   .container {
-    width: 90%;
-    padding: 10px;
+      width: 90%;
+      padding: 10px;
   }
 
-  form {
-    width: 100%;
-  }
-
-  select, input, textarea, button {
-    width: 100%;
-  }
-}
-
-/* Responsive styling for mobile devices */
-@media screen and (max-width: 480px) {
-  .logo span {
-    font-size: 1.2rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  form {
-    padding: 10px;
-  }
-}
   form {
       width: 100%;
   }
 
   select, input, textarea, button {
-      width: 100%;
+      width: -100%;
   }
+}
 
 @media screen and (max-width: 480px) {
   .logo span {
@@ -301,7 +279,6 @@ footer {
       padding: 10px;
   }
 }
-
 
 .fresh-mart {
   font-size: 2em;
@@ -352,125 +329,58 @@ footer {
 .buy-button:hover {
   background-color: #4CAF50; /* Darker shade for hover */
 }
+  
 
- /* Base styles */
-body {
-  font-family: Arial, sans-serif;
-}
-
-.order-summary {
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.order-summary h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-tfoot td {
-  font-weight: bold;
-}
-
-#totalPrice {
-  text-align: right;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-button, .buy-button {
-  padding: 10px 20px;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-}
-
-.buy-button {
-  background-color: #28a745;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-
-button:hover, .buy-button:hover {
-  opacity: 0.9;
-}
-
-/* Responsive styles */
-/* Ensure no horizontal scroll */
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  overflow-x: hidden;
-}
-
-/* Responsive table styles */
-@media screen and (max-width: 768px) {
-  .order-summary table, 
-  .order-summary thead, 
-  .order-summary tbody, 
-  .order-summary th, 
-  .order-summary td, 
-  .order-summary tr {
-    display: block;
-  }
-
-  .order-summary thead tr {
-    display: none;
-  }
-
-  .order-summary tr {
-    margin-bottom: 15px;
-  }
-
-  .order-summary td {
-    text-align: right;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  .order-summary td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 15px;
-    font-weight: bold;
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .order-summary {
-    margin: 0 auto;
-    max-width: 100%;
+      margin: 5px;
+      padding: 5px;
+      margin-right: 130px;
+  }
+
+  .order-summary h2 {
+      font-size: 1.2em;
+  }
+
+  table {
+      font-size: 0.8em;
+  }
+
+  th, td {
+      padding: 6px;
+  }
+
+  button, .buy-button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+
+  .order-summary table, .order-summary thead, .order-summary tbody, .order-summary th, .order-summary td, .order-summary tr {
+      display: block;
+  }
+
+  .order-summary tr {
+      margin-bottom: 15px;
+  }
+
+  .order-summary th, .order-summary td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+  }
+
+  .order-summary th::before, .order-summary td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+  }
+
+  tfoot {
+      display: block;
+      text-align: right;
   }
 }

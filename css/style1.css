@@ -1,0 +1,386 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #a9dc7c;
+  background-size: 1500px 1080px;
+  background-position: fixed;
+  background-image: url("../images/background\ image\ 1.jpg");
+  margin: 0;
+  padding: 0;
+  color: #6e6e6e;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container for header content */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling the logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #202020;
+}
+
+/* Styling for specific words in the logo */
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Styling the navigation menu */
+.navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Styling for navigation links */
+.navigation ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background-color: #74c541;
+  color: #000000;
+}
+
+/* Styling for right navigation items */
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.category {
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+input[type="number"], input[type="text"], input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.order-summary {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #ecff8d;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 5px solid #e4ff4a;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #59ff34;
+}
+
+.footer-menu {
+  margin: 20px 0;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+  background-color: #74c541;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navigation ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+  }
+
+  .navigation ul li {
+      margin: 10px 0;
+  }
+
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+
+  form {
+      width: 100%;
+  }
+
+  select, input, textarea, button {
+      width: -100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo span {
+      font-size: 1.2rem;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  form {
+      padding: 10px;
+  }
+}
+
+.fresh-mart {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.fresh {
+  color: black;
+}
+
+.mart {
+  color: green;
+}
+
+.baking-heading {
+  color: #ffffff;
+}
+
+.fruits-heading {
+  color: #ffffff;
+}
+
+.meat-seafood-heading {
+  color: #ffffff;
+}
+
+/* Hover effects for sections */
+.fruits-heading:hover,
+.meat-seafood-heading:hover,
+.baking-heading:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.buy-button {
+  background-color: #4CAF50; /* Change to your desired color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.buy-button:hover {
+  background-color: #4CAF50; /* Darker shade for hover */
+}
+  
+
+@media (max-width: 480px) {
+  .order-summary {
+      margin: 5px;
+      padding: 5px;
+      margin-right: 130px;
+  }
+
+  .order-summary h2 {
+      font-size: 1.2em;
+  }
+
+  table {
+      font-size: 0.8em;
+  }
+
+  th, td {
+      padding: 6px;
+  }
+
+  button, .buy-button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+  }
+
+  .order-summary table, .order-summary thead, .order-summary tbody, .order-summary th, .order-summary td, .order-summary tr {
+      display: block;
+  }
+
+  .order-summary tr {
+      margin-bottom: 15px;
+  }
+
+  .order-summary th, .order-summary td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+  }
+
+  .order-summary th::before, .order-summary td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+  }
+
+  tfoot {
+      display: block;
+      text-align: right;
+  }
+}

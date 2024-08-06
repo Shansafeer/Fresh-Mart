@@ -263,12 +263,16 @@ footer {
 /* Payment method images */
 .payment-methods {
     margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Stack radio buttons and images vertically */
+    align-items: center; /* Center-align the items horizontally */
 }
 
 .payment-methods label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    justify-content: center; /* Center-align content within label */
 }
 
 .payment-methods input[type="radio"] {
@@ -286,6 +290,5 @@ footer {
         width: 40px; /* Adjust the size for smaller screens */
     }
 }
-
 
 
